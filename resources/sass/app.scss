@@ -1,6 +1,7 @@
-$primary: grey;
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-* {
-    color: #ef4444;
-    background: $primary;
-}
+@import "base/base";
+
+
+@import "layout/header";

@@ -1,0 +1,10 @@
+.header {
+    border: 0.125rem solid $color-border-primary;
+    color: white;
+    display: flex;
+    font-family: "Tabac Mono", monospace;
+
+    &__option {
+        border-left: 0.125rem solid $color-border-primary;
+    }
+}
