@@ -8,6 +8,8 @@
     <title>Carlos Pineda | Dev</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
+@include('header')
 <body>
+@yield('body')
 </body>
 </html>
