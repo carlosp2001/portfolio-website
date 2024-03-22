@@ -1,6 +1,7 @@
 $color-primary-heading-font: rgb(117, 134, 156);
 $color-secondary-heading-font: rgb(224, 182, 96);
 $color-background-dark: rgb(5, 6, 10);
+$color-background-light: rgb(18, 24, 31);
 $color-border-primary: rgb(33, 40, 53);
 
 //FONT
@@ -11,3 +12,6 @@ $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
+
+// Border
+$header-primary-border: 0.125rem solid $color-border-primary;
