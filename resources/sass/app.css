@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: rgb(5, 6, 10);
+  height: 100%;
   box-sizing: border-box;
 }
 
@@ -77,6 +77,46 @@ body {
   width: 100%;
   height: 10%;
   background-color: rgb(182, 79, 88);
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: 85%;
+  position: relative;
+  font-family: "Tabac Mono", monospace;
+}
+.content__item {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content__item__text {
+  width: 75%;
+  justify-content: left;
+  height: fit-content;
+}
+.content__item__text__intro {
+  color: rgb(124, 132, 141);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.content__item__text__name {
+  color: white;
+  font-size: 7rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.content__item__text__description-1 {
+  color: rgb(115, 165, 221);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.content__item__text__description-2 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=app.css.map */

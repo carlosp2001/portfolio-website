@@ -1,0 +1,44 @@
+.content {
+    display: flex;
+    width: 100%;
+    height: 85%;
+    position: relative;
+    font-family: "Tabac Mono", monospace;
+
+    &__item {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__text {
+            width: 75%;
+            justify-content: left;
+            height: fit-content;
+            &__intro {
+                color: rgb(124, 132, 141);
+                font-size: 3rem;
+                margin-bottom: 2rem;
+            }
+
+            &__name {
+                color: white;
+                font-size: 7rem;
+                font-weight: bold;
+                margin-bottom: 2rem;
+            }
+
+            &__description {
+                &-1 {
+                    color: rgb(115, 165, 221);
+                    font-size: 3rem;
+                    margin-bottom: 2rem;
+                }
+                &-2 {
+                    color: white;
+                    font-size: 3rem;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
