@@ -27,6 +27,7 @@ body {
   height: 5rem;
 }
 .header__title {
+  align-items: center;
   font-size: 2rem;
   width: 30%;
   border-right: 0.125rem solid rgb(33, 40, 53);

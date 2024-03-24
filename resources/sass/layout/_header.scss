@@ -9,6 +9,7 @@
     height: 5rem;
 
     &__title {
+        align-items: center;
         font-size: 2rem;
         width: 30%;
         border-right: $header-primary-border;
