@@ -1,0 +1,63 @@
+.footer {
+    position: relative;
+    border-top: $header-primary-border;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    font-family: "Tabac Mono", monospace;
+    color: $color-primary-heading-font;
+    height: 5rem;
+
+    &__content {
+        width: 100%;
+        display: flex;
+
+        &__nav {
+            width: 80%;
+            border-right: $header-primary-border;
+            display: flex;
+            position: relative;
+
+            &__menu {
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                position: relative;
+
+                &__option {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-right: $header-primary-border;
+                    width: 8rem;
+
+                    &-1 {
+                        justify-content: end;
+                        padding-right: 2rem;
+                        width: 20rem;
+                    }
+
+                    &:last-child{
+                        flex-grow: 1;
+                    }
+
+                    & a {
+                        text-decoration: none;
+                        color: inherit;
+                    }
+                }
+            }
+
+        }
+
+        &__copyright {
+            display: flex;
+            width: 20%;
+            align-items: center;
+            justify-items: center;
+            font-size: 1.2rem;
+            padding-left: 2rem;
+        }
+    }
+}
