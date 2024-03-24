@@ -1,9 +1,9 @@
 .content {
     display: flex;
-    width: 100%;
-    height: 85%;
     position: relative;
     font-family: "Tabac Mono", monospace;
+    height: calc(100vh - (10rem * (100 / 100)));
+    min-height: 80rem;
 
     &__item {
         width: 50%;

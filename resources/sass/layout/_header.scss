@@ -1,22 +1,23 @@
 .header {
     border-bottom: $header-primary-border;
     color: $color-primary-heading-font;
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: row;
     font-family: "Tabac Mono", monospace;
     position: relative;
+    height: 5rem;
 
     &__title {
-        font-size: 3rem;
-        width: 25%;
+        font-size: 2rem;
+        width: 30%;
         border-right: $header-primary-border;
         margin-left: 5rem;
-        padding: 2.5rem 0 2.5rem 0;
+        display: flex;
     }
 
     &__menu {
-        width: 75%;
+        width: 70%;
         display: flex;
 
         &__list {
@@ -26,19 +27,21 @@
             width: 100%;
 
             &__option {
-                width: 15%;
+                width: 15rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 position: relative;
+                flex-shrink: 0;
 
                 &:nth-child(5) {
-                    width: 25%;
+                    flex-grow: 1;
                 }
 
                 &:last-child{
                     justify-content: flex-end;
                     margin-right: 5rem;
+                    width: 15rem;
                 }
 
                 &:not(:last-child) {
@@ -66,6 +69,4 @@
             }
         }
     }
-
-
 }

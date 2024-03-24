@@ -12,4 +12,5 @@
 <body>
 @yield('body')
 </body>
+@include('footer')
 </html>

@@ -10,32 +10,31 @@ html {
   font-size: 62.5%;
   background-color: rgb(5, 6, 10);
   border: 0.125rem solid rgb(33, 40, 53);
-  height: 100vh;
 }
 
 body {
-  height: 100%;
   box-sizing: border-box;
 }
 
 .header {
   border-bottom: 0.125rem solid rgb(33, 40, 53);
   color: rgb(117, 134, 156);
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: row;
   font-family: "Tabac Mono", monospace;
   position: relative;
+  height: 5rem;
 }
 .header__title {
-  font-size: 3rem;
-  width: 25%;
+  font-size: 2rem;
+  width: 30%;
   border-right: 0.125rem solid rgb(33, 40, 53);
   margin-left: 5rem;
-  padding: 2.5rem 0 2.5rem 0;
+  display: flex;
 }
 .header__menu {
-  width: 75%;
+  width: 70%;
   display: flex;
 }
 .header__menu__list {
@@ -45,18 +44,20 @@ body {
   width: 100%;
 }
 .header__menu__list__option {
-  width: 15%;
+  width: 15rem;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  flex-shrink: 0;
 }
 .header__menu__list__option:nth-child(5) {
-  width: 25%;
+  flex-grow: 1;
 }
 .header__menu__list__option:last-child {
   justify-content: flex-end;
   margin-right: 5rem;
+  width: 15rem;
 }
 .header__menu__list__option:not(:last-child) {
   border-right: 0.125rem solid rgb(33, 40, 53);
@@ -79,12 +80,56 @@ body {
   background-color: rgb(182, 79, 88);
 }
 
+.footer {
+  position: relative;
+  border-top: 0.125rem solid rgb(33, 40, 53);
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  font-family: "Tabac Mono", monospace;
+  color: rgb(117, 134, 156);
+  height: 5rem;
+}
+.footer__content {
+  width: 100%;
+  display: flex;
+}
+.footer__content__nav {
+  width: 80%;
+  border-right: 0.125rem solid rgb(33, 40, 53);
+  display: flex;
+}
+.footer__content__nav__menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.footer__content__nav__menu__option {
+  border-right: 0.125rem solid rgb(33, 40, 53);
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.footer__content__nav__menu__option a {
+  text-decoration: none;
+  color: inherit;
+}
+.footer__content__copyright {
+  width: 20%;
+}
+
 .content {
   display: flex;
-  width: 100%;
-  height: 85%;
   position: relative;
   font-family: "Tabac Mono", monospace;
+  height: calc(100vh - 10rem);
+  min-height: 80rem;
 }
 .content__item {
   width: 50%;
