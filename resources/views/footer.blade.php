@@ -10,6 +10,9 @@
                 <li class="footer__content__nav__menu__option footer__content__nav__menu__option-4"><a href=""><object type="image/svg+xml" data="{{ asset('svg/hackerrank.svg') }}" width="40rem">
                             Your browser does not support SVG
                         </object></a></li>
+                <li class="footer__content__nav__menu__option footer__content__nav__menu__option-4"><a href=""><object type="image/svg+xml" data="{{ asset('svg/medium.svg') }}" width="40rem">
+                            Your browser does not support SVG
+                        </object></a></li>
                 <li class="footer__content__nav__menu__option footer__content__nav__menu__option-5"><a href="">_find_me</a></li>
             </ul>
         </nav>
