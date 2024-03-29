@@ -29,13 +29,13 @@ body {
 .header__title {
   align-items: center;
   font-size: 2rem;
-  width: 20%;
   border-right: 0.125rem solid rgb(33, 40, 53);
   margin-left: 7rem;
   display: flex;
+  width: 30%;
 }
 .header__menu {
-  width: 80%;
+  width: 70%;
   display: flex;
 }
 .header__menu__list {
@@ -54,6 +54,7 @@ body {
 }
 .header__menu__list__option:nth-child(5) {
   flex-grow: 1;
+  width: auto;
 }
 .header__menu__list__option:last-child {
   justify-content: flex-end;
@@ -179,8 +180,8 @@ body {
 .content__item__projects {
   border: 0.125rem solid rgb(33, 40, 53);
   border-radius: 1.2rem;
-  width: 40rem;
-  height: 30rem;
+  width: 70rem;
+  height: 40rem;
 }
 
 /*# sourceMappingURL=app.css.map */

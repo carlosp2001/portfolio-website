@@ -11,14 +11,14 @@
     &__title {
         align-items: center;
         font-size: 2rem;
-        width: 20%;
         border-right: $header-primary-border;
         margin-left: 7rem;
         display: flex;
+        width: 30%;
     }
 
     &__menu {
-        width: 80%;
+        width: 70%;
         display: flex;
 
         &__list {
@@ -37,6 +37,7 @@
 
                 &:nth-child(5) {
                     flex-grow: 1;
+                    width: auto;
                 }
 
                 &:last-child{
