@@ -29,13 +29,13 @@ body {
 .header__title {
   align-items: center;
   font-size: 2rem;
-  width: 30%;
+  width: 33%;
   border-right: 0.125rem solid rgb(33, 40, 53);
-  margin-left: 5rem;
+  margin-left: 10rem;
   display: flex;
 }
 .header__menu {
-  width: 70%;
+  width: 67%;
   display: flex;
 }
 .header__menu__list {
@@ -84,7 +84,7 @@ body {
 .footer {
   position: relative;
   border-top: 0.125rem solid rgb(33, 40, 53);
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: row;
   font-family: "Tabac Mono", monospace;
@@ -99,30 +99,41 @@ body {
   width: 80%;
   border-right: 0.125rem solid rgb(33, 40, 53);
   display: flex;
+  position: relative;
 }
 .footer__content__nav__menu {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  position: relative;
 }
 .footer__content__nav__menu__option {
-  border-right: 0.125rem solid rgb(33, 40, 53);
-  height: 100%;
-  width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  border-right: 0.125rem solid rgb(33, 40, 53);
+  width: 8rem;
+}
+.footer__content__nav__menu__option-1 {
+  justify-content: end;
+  padding-right: 2rem;
+  width: 20rem;
+}
+.footer__content__nav__menu__option:last-child {
+  flex-grow: 1;
 }
 .footer__content__nav__menu__option a {
   text-decoration: none;
   color: inherit;
 }
 .footer__content__copyright {
+  display: flex;
   width: 20%;
+  align-items: center;
+  justify-items: center;
+  font-size: 1.2rem;
+  padding-left: 2rem;
 }
 
 .content {
@@ -134,12 +145,13 @@ body {
 }
 .content__item {
   width: 50%;
+  padding-left: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .content__item__text {
-  width: 75%;
+  width: 100%;
   justify-content: left;
   height: fit-content;
 }
