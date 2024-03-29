@@ -45,7 +45,7 @@ body {
   width: 100%;
 }
 .header__menu__list__option {
-  width: 10rem;
+  width: 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +58,7 @@ body {
 .header__menu__list__option:last-child {
   justify-content: flex-end;
   margin-right: 5rem;
-  width: 12rem;
+  width: 20rem;
 }
 .header__menu__list__option:not(:last-child) {
   border-right: 0.125rem solid rgb(33, 40, 53);
@@ -150,7 +150,7 @@ body {
   align-items: center;
 }
 .content__item__text {
-  padding-left: 10rem;
+  padding-left: 7rem;
   width: 100%;
   justify-content: left;
   height: fit-content;
