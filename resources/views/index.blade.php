@@ -10,7 +10,9 @@
             </div>
         </div>
         <div class="content__item">
+            <div class="content__item__projects">
 
+            </div>
         </div>
     </section>
 @endsection

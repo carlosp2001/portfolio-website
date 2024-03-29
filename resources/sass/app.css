@@ -29,13 +29,13 @@ body {
 .header__title {
   align-items: center;
   font-size: 2rem;
-  width: 33%;
+  width: 20%;
   border-right: 0.125rem solid rgb(33, 40, 53);
-  margin-left: 10rem;
+  margin-left: 7rem;
   display: flex;
 }
 .header__menu {
-  width: 67%;
+  width: 80%;
   display: flex;
 }
 .header__menu__list {
@@ -45,7 +45,7 @@ body {
   width: 100%;
 }
 .header__menu__list__option {
-  width: 15rem;
+  width: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +58,7 @@ body {
 .header__menu__list__option:last-child {
   justify-content: flex-end;
   margin-right: 5rem;
-  width: 15rem;
+  width: 12rem;
 }
 .header__menu__list__option:not(:last-child) {
   border-right: 0.125rem solid rgb(33, 40, 53);
@@ -145,12 +145,12 @@ body {
 }
 .content__item {
   width: 50%;
-  padding-left: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .content__item__text {
+  padding-left: 10rem;
   width: 100%;
   justify-content: left;
   height: fit-content;
@@ -162,19 +162,25 @@ body {
 }
 .content__item__text__name {
   color: white;
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: bold;
   margin-bottom: 2rem;
 }
 .content__item__text__description-1 {
   color: rgb(115, 165, 221);
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
 .content__item__text__description-2 {
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
+}
+.content__item__projects {
+  border: 0.125rem solid rgb(33, 40, 53);
+  border-radius: 1.2rem;
+  width: 40rem;
+  height: 30rem;
 }
 
 /*# sourceMappingURL=app.css.map */

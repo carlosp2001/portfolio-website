@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    $activePage = 'home';
+    return view('index', compact('activePage'));
 });
