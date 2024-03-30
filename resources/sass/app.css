@@ -24,7 +24,7 @@ body {
   flex-direction: row;
   font-family: "Tabac Mono", monospace;
   position: relative;
-  height: 5rem;
+  height: 6rem;
 }
 .header__title {
   align-items: center;
@@ -163,7 +163,7 @@ body {
 }
 .content__item__text__name {
   color: white;
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: bold;
   margin-bottom: 2rem;
 }
@@ -182,6 +182,21 @@ body {
   border-radius: 1.2rem;
   width: 70rem;
   height: 40rem;
+  padding: 3rem;
+}
+.content__item__projects__project__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.content__item__projects__project__title {
+  font-size: 2rem;
+  color: rgb(224, 182, 96);
+}
+.content__item__projects__project__date {
+  color: rgb(117, 134, 156);
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=app.css.map */
