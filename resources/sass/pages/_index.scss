@@ -4,17 +4,19 @@
     font-family: "Tabac Mono", monospace;
     height: calc(100vh - (10rem * (100 / 100)));
     min-height: 80rem;
+    justify-content: space-around;
 
     &__item {
-        width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
+
         &__text {
             padding-left: 7rem;
             width: 100%;
             justify-content: left;
             height: fit-content;
+
             &__intro {
                 color: rgb(124, 132, 141);
                 font-size: 3rem;
@@ -23,7 +25,7 @@
 
             &__name {
                 color: white;
-                font-size: 5rem;
+                font-size: 8rem;
                 font-weight: bold;
                 margin-bottom: 2rem;
             }
@@ -34,6 +36,7 @@
                     font-size: 2rem;
                     margin-bottom: 2rem;
                 }
+
                 &-2 {
                     color: white;
                     font-size: 2rem;
@@ -46,7 +49,74 @@
             border: $header-primary-border;
             border-radius: 1.2rem;
             width: 70rem;
-            height: 40rem;
+            height: 45rem;
+            padding: 3rem;
+            position: relative;
+
+            &__project {
+                display: flex;
+                flex-direction: column;
+
+                &__container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-bottom: 2rem;
+                    height: 2rem;
+                }
+
+                &__title {
+                    font-size: 2rem;
+                    color: $color-secondary-heading-font;
+                }
+
+                &__date {
+                    color: $color-primary-heading-font;
+                    font-size: 1.5rem;
+                }
+
+                &__image {
+                    width: 100%;
+                    height: 35rem;
+                    background-size: cover;
+                }
+            }
+
+            &__navbar {
+                border-radius: 10rem;
+                width: 3rem;
+                height: 8rem;
+                background-color: rgba(0, 0, 0, 0.24);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                padding: 0.5rem;
+
+                &__button {
+                    border: none;
+                    border-radius: 50%;
+                    background-color: lightgray;
+                    width: 1rem;
+                    height: 1rem;
+
+                    &__active {
+                        background-color: white;
+                    }
+                }
+
+                &__container {
+                    padding-left: 2rem;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                }
+            }
         }
     }
 }
