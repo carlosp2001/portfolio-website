@@ -1,0 +1,16 @@
+[
+    {
+        "projectName": "GoFood",
+        "projectDescription": "A food delivery app",
+        "projectImage": "gofoodproject.png",
+        "startDate": "Sep 2023",
+        "endDate": "Currently Working"
+    },
+    {
+        "projectName": "Nova Casa",
+        "projectDescription": "A dashboard to manage real state properties",
+        "projectImage": "novacasaproject.png",
+        "startDate": "May 2023",
+        "endDate": "Aug 2023"
+    }
+]
