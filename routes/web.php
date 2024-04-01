@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $json = file_get_contents(storage_path('app_data/projects.json'));
 
-    $json_data = json_decode($json, true);
+    $json_data = json_decode($json, false);
 
     $activePage = 'home';
     return view('index', ['projects' => $json_data, 'activePage' => $activePage]);
