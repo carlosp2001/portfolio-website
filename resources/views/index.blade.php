@@ -27,9 +27,11 @@
                     @foreach($projects as $project)
                         <div class="content__item__projects__project {{$loop->first ? 'content__item__projects__project__active' : ''}}">
                             <div class="content__item__projects__project__container"><span
-                                    class="content__item__projects__project__title">_gofood</span> <span
-                                    class="content__item__projects__project__date">Sep 2023 - Current Working</span></div>
-                            <div style="background-image: url('{{asset("images/gofoodproject.png")}}')"
+                                        class="content__item__projects__project__title">{{"_" . strtolower($project['projectName'])}}</span>
+                                <span
+                                        class="content__item__projects__project__date">{{$project['startDate'] . " - " . $project['endDate']}}</span>
+                            </div>
+                            <div style="background-image: url('{{asset("images/{$project['projectImage']}")}}')"
                                  class="content__item__projects__project__image">
                             </div>
                         </div>
