@@ -34,6 +34,16 @@ body {
   display: flex;
   width: 30%;
 }
+@media only screen and (max-width: 87.5em) {
+  .header__title {
+    width: 15%;
+  }
+}
+@media only screen and (min-width: 87.5em) and (max-width: 93.75em) {
+  .header__title {
+    width: 20%;
+  }
+}
 .header__menu {
   width: 70%;
   display: flex;
@@ -128,6 +138,18 @@ body {
   text-decoration: none;
   color: inherit;
 }
+.footer__content__nav__menu__option__scrolling_text {
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .footer__content__copyright {
   display: flex;
   width: 20%;
@@ -143,15 +165,15 @@ body {
   font-family: "Tabac Mono", monospace;
   height: calc(100vh - 10rem);
   min-height: 80rem;
+  justify-content: space-between;
 }
 .content__item {
-  width: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  padding-left: 7rem;
+  padding-right: 7rem;
 }
 .content__item__text {
-  padding-left: 7rem;
   width: 100%;
   justify-content: left;
   height: fit-content;
@@ -181,8 +203,19 @@ body {
   border: 0.125rem solid rgb(33, 40, 53);
   border-radius: 1.2rem;
   width: 70rem;
-  height: 40rem;
+  height: 45rem;
   padding: 3rem;
+  position: relative;
+}
+@media only screen and (max-width: 103em) {
+  .content__item__projects {
+    width: 60rem;
+  }
+}
+.content__item__projects__project {
+  display: none;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 .content__item__projects__project__container {
   display: flex;
@@ -197,6 +230,47 @@ body {
 .content__item__projects__project__date {
   color: rgb(117, 134, 156);
   font-size: 1.5rem;
+}
+.content__item__projects__project__image {
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+}
+.content__item__projects__project__active {
+  display: flex;
+}
+.content__item__projects__navbar {
+  border-radius: 10rem;
+  width: 3rem;
+  height: 8rem;
+  background-color: rgba(0, 0, 0, 0.24);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+  z-index: 1;
+}
+.content__item__projects__navbar__button {
+  border: none;
+  border-radius: 50%;
+  background-color: lightgray;
+  width: 1rem;
+  height: 1rem;
+}
+.content__item__projects__navbar__button__active {
+  background-color: white;
+}
+.content__item__projects__navbar__container {
+  padding-left: 2rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 /*# sourceMappingURL=app.css.map */

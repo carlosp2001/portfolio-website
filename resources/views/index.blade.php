@@ -23,19 +23,23 @@
                         @endforeach
                     </div>
                 </div>
-                <div class="content__item__projects__container">
+                <div style="height: 100%">
                     @foreach($projects as $project)
-                        <div class="content__item__projects__project {{$loop->first ? 'content__item__projects__project__active' : ''}}">
+                        <div style="height: 100%"
+                             class="content__item__projects__project {{$loop->first ? 'content__item__projects__project__active' : ''}}">
                             <div class="content__item__projects__project__container"><span
-                                        class="content__item__projects__project__title">{{"_" . str_replace(" ", "", strtolower($project->projectName))}}</span>
+                                    class="content__item__projects__project__title">{{"_" . str_replace(" ", "", strtolower($project->projectName))}}</span>
                                 <span
-                                        class="content__item__projects__project__date">{{$project->startDate . " - " . $project->endDate}}</span>
+                                    class="content__item__projects__project__date">{{$project->startDate . " - " . $project->endDate}}</span>
                             </div>
                             <div style="background-image: url('{{asset("images/{$project->projectImage}")}}')"
                                  class="content__item__projects__project__image">
                             </div>
                         </div>
                     @endforeach
+                </div>
+
+                <div class="content__item__projects__container">
                 </div>
             </div>
         </div>
