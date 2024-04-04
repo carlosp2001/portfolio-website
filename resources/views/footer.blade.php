@@ -18,8 +18,9 @@
                         href="https://medium.com/@pinedalberto">
                         <img src="{{asset('svg/medium.svg')}}" alt="medium-logo" width="40rem">
                     </a></li>
-                <li class="footer__content__nav__menu__option footer__content__nav__menu__option-5"><a
-                        href="">_find_me</a></li>
+                <li class="footer__content__nav__menu__option footer__content__nav__menu__option-5" style="overflow: hidden"><a
+                        href="" class="footer__content__nav__menu__option__scrolling_text">Projects: -> NovaCasa Dashboard, Web Application for managing properties -> GoFood:
+                        Backend for delivery App with realtime services</a></li>
             </ul>
         </nav>
         <p class="footer__content__copyright">© 2024 Carlos Pineda. Todos los derechos reservados.</p>
