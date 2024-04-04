@@ -17,6 +17,18 @@
         width: 30%;
     }
 
+    @media only screen and (max-width: 87.5em) {
+        &__title {
+            width: 15%;
+        }
+    };
+
+    @media only screen and (min-width: 87.5em) and (max-width: 93.75em) {
+        &__title {
+            width: 20%;
+        }
+    };
+
     &__menu {
         width: 70%;
         display: flex;
@@ -40,7 +52,7 @@
                     width: auto;
                 }
 
-                &:last-child{
+                &:last-child {
                     justify-content: flex-end;
                     margin-right: 5rem;
                     width: 20rem;
@@ -58,6 +70,7 @@
                 &__select {
                     background-color: $color-background-light;
                     color: rgb(224, 182, 96);
+
                     &::after {
                         position: absolute;
                         content: "";
